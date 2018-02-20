@@ -1,0 +1,188 @@
+/* 以下開始首頁大圖 */
+.bigimg{
+	background-image: url('../images/Product/porductBigimg3.jpg');
+}
+
+/* 以下開始導覽列 */
+
+#nav li.navText3{
+	transform: translate(2px, 2px);
+	box-shadow: 0px 0px 0px #666;
+}
+#nav li.navText3 a{
+	color: #ffb11b;
+}
+#nav li.navText3:hover{
+	transform:translate(2px, 2px);
+	box-shadow: 0px 0px 0px #666;
+}
+#nav li.navText3:active{
+	transform:translate(2px, 2px);
+	box-shadow: 0px 0px 0px #666;
+}
+/* 以下RWD導覽列 */
+.mobileMenu .navTextTop:nth-child(3) a{
+	transform: translate(2px, 2px);
+	box-shadow: 0px 0px 0px #434343;
+	color: #ffb11b;
+}
+/* 以下開始內頁 */
+.body{
+	width: 960px;
+	margin: 200px auto 900px auto;
+}
+.title{
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 100px;
+	letter-spacing: 1px;
+	color: #6B4a2b;
+}
+.productBig{
+	width: 50%;
+	float: left;
+}
+.productBig img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+.productBig h2{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 20px;
+	color: rgba(0, 0, 0, 0.8);
+}
+.productBig table{
+	text-align: center;
+	margin: 40px auto;
+	color: rgba(0, 0, 0, 0.8);
+}
+.productBig table tr td span{
+  color:black;
+  cursor:pointer;
+}
+#add, #del{
+	padding: 1px 12px;
+	border-radius: 20px;
+	vertical-align: middle;
+	background: linear-gradient(to right, HSLA(12, 58%, 58%, .8) 0%,HSLA(13, 59%, 59%, 1.00) 100%);
+	color: #fff;
+	box-shadow: 1px 1px 1px #666;
+	transition: .1s;
+	display: inline-block;
+}
+#add:hover, #del:hover{
+	box-shadow: 2px 2px 1px #666;
+	transform: translate(-1px, -1px);
+}
+#add:active, #del:active{
+	box-shadow: 0 0 0 #fff;
+	transform: translate(2px, 2px);
+}
+.fa-plus-circle, .fa-minus-circle{
+	color: rgb(252, 250, 241);
+}
+#add:active .fa-plus-circle{
+	animation:upFade .5s 1;
+}
+
+@keyframes upFade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+#del:active .fa-minus-circle{
+	animation:downFade .5s 1;
+}
+
+@keyframes downFade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.buyBtn{
+	width: 100%;
+	padding: 16px 19px;
+	margin-left: 2px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	background-color: #FFECB6;
+	box-shadow: 2px 2px 2px #888;
+	transition: .1s;
+	display: block;
+	color: #6e552a;
+}
+.buyBtn:hover{
+	transform: translate(-2px, -2px);
+	box-shadow: 4px 4px 2px #888;
+	color: #ffb11b;
+}
+.buyBtn:active{
+	transform: translate(2px, 2px);
+	box-shadow: 0 0 0 #fff;
+}
+.buyBtn:hover .ani {
+	animation: tada 1s infinite;
+}
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@media screen and (max-width: 959px){
+	.productBig{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 20px;
+		border-radius: 20px;
+	}
+}
+.content{
+	float: right;
+	width: 30%;
+	/* padding: 50px; */
+	font-size: 16px;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	color: rgba(0, 0, 0, 0.8);
+}
+.content p .point{
+	line-height: 2em;
+	color: #BD0906;
+}
+@media screen and (max-width: 959px){
+	.content{
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,21 @@
+@font-face {
+	font-family: MyCustomFont;
+	src:
+		url('../plugins/GenJyuuGothic-Regular.ttf'),
+		local(STYuanti-TC-Regular),
+		local("微軟正黑體");
+}
+
+/* 英數字專用 */
+@font-face {
+	font-family: MyCustomFont; /* 同樣的 font-family */
+	unicode-range: U+00-024F;  /* Latin, Latin1 Sup., Ext-A, Ext-B */
+	src:
+		url('../plugins/corbel.ttf'),
+		local(Helvetica),     /* OS X preferred */
+		local(Arial);         /* Other OS */
+}
+body {
+ 	font-family: MyCustomFont, sans-serif;
+	background-color: rgba(255, 255, 255, 1);
+}

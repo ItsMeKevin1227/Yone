@@ -1,0 +1,67 @@
+/* 以下開始首頁大圖 */
+.bigimg{
+	background-image: url('../images/reserve/bg01.jpg');
+}
+/* 以下RWD導覽列 */
+.mobileMenu .navTextBottom:nth-child(4) a{
+	transform: translate(2px, 2px);
+	box-shadow: 0px 0px 0px #434343;
+	color: #ffb11b;
+}
+/* 以下是文字 */
+
+.backGround{
+	width: 100%;
+	background-image: url('../images/reserve/bg02.jpg');
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 160px auto 0;
+}
+.Text{
+	letter-spacing: 1px;
+	line-height: 1.5em;
+	font-size: 20px;
+	color: rgba(0, 0, 0, .8);
+}
+.Text span{
+	color: #FF635C;
+}
+.Text h1{
+	text-align: center;
+	font-size: 36px;
+	color: #6B4a2b;
+	margin-bottom: 50px;
+}
+.Text p{
+	margin-bottom: 40px;
+	width: 100%;
+}
+.Text .method{
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	color: #6B4a2b;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+.Text li{
+	width: 100%;
+	list-style: none;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 959px){
+	.backGround{
+		margin-top: 0;
+	}
+	#footer{
+		margin-top: 0;
+	}
+}
+
+/* 以下是footer */
+#footer .footerMenu2 .footerMenu:nth-child(2){
+	transform:rotate(3deg);
+}
+#footer .footerMenu2 .footerMenu:nth-child(2) a{
+	color: #ffb11b;
+}

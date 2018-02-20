@@ -1,0 +1,67 @@
+/* 以下開始首頁大圖 */
+.bigimg{
+	background-image: url('../images/map/bg01.jpg');
+}
+/* 以下RWD導覽列 */
+.mobileMenu .navTextBottom:nth-child(2) a{
+	transform: translate(2px, 2px);
+	box-shadow: 0px 0px 0px #434343;
+	color: #ffb11b;
+}
+/* 以下開始內頁 */
+.body{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.yoneImg{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+.yoneImg img{
+	width: 100%;
+}
+.body{
+	line-height: 2em;
+	letter-spacing: 1px;
+}
+.Text{
+	padding-left: 100px;
+	color: rgba(0, 0, 0, .8);
+}
+.Text hr{
+	width: 60%;
+}
+.Text p{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+@media screen and (max-width: 959px){
+	.body{
+		width: 100%;
+	}
+	.yoneImg{
+		width: 95%;
+	}
+	.Text{
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+}
+
+/* 以下是footer */
+
+#footer .footerMenu1 .footerMenu:nth-child(2){
+	transform:rotate(3deg);
+}
+#footer .footerMenu1 .footerMenu:nth-child(2) a{
+	color: #ffb11b;
+}
+@media screen and (max-width: 959px){
+	#footer{
+		margin-top: 100px;
+	}
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/icon.png">
+	<title>外灣窯-湯種吐司</title>
+	<!-- Reset -->
+	<link rel="stylesheet" type="text/css" href="plugins/reset.css">
+	<!-- 字型 -->
+	<link rel="stylesheet" href="CSS/font.css">
+    <link rel="stylesheet" href="plugins/css/font-awesome.min.css">
+    <!-- 引用通用CSS -->
+    <link rel="stylesheet" href="CSS/general.css">
+    <!-- 引用此網頁CSS -->
+	<link rel="stylesheet" href="CSS/Yone_ProductToast.css">
+	<!-- 引用hover效果 -->
+	<link rel="stylesheet" href="CSS/hover-min.css">
+	<!-- 引用jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- 引用動畫效果 -->
+    <link rel="stylesheet" href="plugins/animate.css">
+    <!-- animation修改 -->
+    <link rel="stylesheet" href="plugins/animateNew.css">
+    <!-- 引用wow.js -->
+    <script src="plugins/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 引用終點 -->
+    <style type="text/css">
+        .hvr-sweep-to-right:before{
+            background-image: linear-gradient(120deg, #ffb11b 0%, #fb9966 100%);
+            border-radius: 8px;
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+<body>
+        <!-- 會員登入 -->
+    <div id="loginBox" class="newbounceInDown wow">
+        <form action="#" method="get" name="login">
+            <input type="text" placeholder="會員帳號">
+            <input type="psw" placeholder="會員密碼">
+            <input type="submit" value="登入" id="loginBoxSubmit">
+            <input type="button" value="註冊" id="signUp">
+        </form>
+        <i class="fa fa-times cancel"></i>
+    </div>
+    <script src="plugins/loginBox.js"></script>
+        <!-- 隱藏的checkbox與燈箱 -->
+    <input type="checkbox" name="" id="menuControl">
+    <div class="lightBox"></div>
+		<!-- NAV -->
+    <div class="nav" id="nav">
+        <div class="navAlign">
+            <li class="logo hvr-hang animated rubberBand "><a href="index.html" title="首頁"><img src="images/002.png" alt="商標"></a></li>
+            <li class="navText navText1"><a href="Yone_ProductPineapple.html" title="土鳳梨酥">土鳳梨酥</a></li>
+            <li class="navText navText2"><a href="Yone_ProductToast.html" title="湯種吐司">湯種吐司</a></li>
+            <li class="navText navText3"><a href="Yone_ProductBread.html" title="歐式麵包">歐式麵包</a></li>
+            <li class="navText navText4 login"><a href="Yone_Account.html" title="會員登入">會員登入</a></li>
+            <li class="navText navText5"><a href="Yone_ShopBag.html" title="購物袋"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+            <li class="logoText hvr-hang"><a href="index.html" title="首頁"><img src="images/009.png" alt="外灣窯"></a></li>
+            <label class="hb" for="menuControl"></label>
+        </div>
+    </div>
+    <div class="mobileMenu">
+        <div id="navTop">
+            <li class="navText navTextTop"><a href="Yone_ProductPineapple.html" title="土鳳梨酥">土鳳梨酥</a></li>
+            <li class="navText navTextTop"><a href="Yone_ProductToast.html" title="湯種吐司">湯種吐司</a></li>
+            <li class="navText navTextTop"><a href="Yone_ProductBread.html" title="歐式麵包">歐式麵包</a></li>
+            <li class="navText navTextTop login"><a href="Yone_Account.html" title="會員登入">會員登入</a></li>
+            <li class="navText navTextTop"><a href="Yone_ShopBag.html" title="購物袋">購物袋</a></li>
+        </div>
+        <div id="navBottom">
+            <li class="navText navTextBottom"><a href="Yone_About.html" title="關於我們">關於我們</a></li>
+            <li class="navText navTextBottom"><a href="Yone_Map.html" title="外灣地圖">外灣地圖</a></li>
+            <li class="navText navTextBottom"><a href="Yone_News.html" title="最新消息">最新消息</a></li>
+            <li class="navText navTextBottom"><a href="Yone_Reserve.html" title="保存方式">保存方式</a></li>
+        </div>
+    </div>
+        <!-- NAV用JS -->
+    <script src="plugins/scroll.js"></script><!-- 引用滾動js -->
+        <!-- 會員登入JS -->
+    <script src="plugins/account.js"></script>
+        <!-- bigimg -->
+    <div class="bigimg fadeIn wow">
+        <p><span class="thisPage">湯種吐司</span></p>
+    </div>
+
+
+	<div class='container mt'>
+		<h1 class="title">鮮奶起司</h1>
+		<div class="productBig">
+			<img class="wow fadeIn" src="images/Product/toast.jpg" alt="鮮奶起司吐司照片">
+			<h2>280NTD/條</h2>
+			<script src="plugins/shop.js"></script>
+			<table>
+				<tr>
+					<td>
+						數量:
+					</td>
+					<td>&nbsp;&nbsp;&nbsp;</td>
+					<td>
+						<span id="del"><i class="fa fa-minus-circle"></i></span>
+                        <input type="text" id="quantity" value="1" style="text-align:center;font-size:18px;">
+                        <span id="add"><i class="fa fa-plus-circle"></i></span>
+					</td>
+				</tr>
+				<tr><td><br></td></tr><!-- 分隔線 -->
+				<tr>
+					<td>
+						價格:
+					</td>
+					<td>&nbsp;&nbsp;&nbsp;</td>
+					<td>
+						<span id="totalPrice" style="font-size:22px;">280</span>
+						<div style="margin-left:auto; margin-right:auto;"><input type="hidden" value="280" id="price"></div>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td colspan="2">
+                        <a href="#" class="buyBtn hvr-sweep-to-right hvr-grow-shadow"><i class="fa fa-shopping-bag ani" aria-hidden="true" style="color:#BD0906;"></i>&nbsp;&nbsp;&nbsp;&nbsp;放入購物袋</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="content">
+			<p class=" wow fadeInRight">
+				烈日下熟成的鳳梨經過削切、熬煮<br>
+				將燦爛的陽光封存成最天然而且美味的餡<br>
+				<br>
+				酥皮是用健康飼養的鮮力蛋®（每一顆都找得到生產履歷）<br>
+				天然奶油和日本麵粉揉成；沒有任何人工合成的添加<br>
+				<br>
+            </p>
+			<p class=" wow fadeInRight">
+                <span class="point">樸實美點</span><br>
+				是一個做了將近五十年糕餅的老師傅反璞歸真之作<br>
+				<br>
+				我們稱它 - <span style='line-height: 1.5em;'>陽光烘熟的美點</span><br>
+			</p>
+			<br>
+			<p class=" wow fadeInRight">
+				<span class="point">詳細說明</span><br>
+				原料：台灣土鳳梨、奶油、麵粉、蛋、砂糖、鹽<br>
+				常溫保存30天，避免放置潮濕高溫或曝曬之場所。<br>
+			</p>
+			<br>
+			<p class=" wow fadeInRight">
+				<span class="point">注意事項</span><br>
+				本產品不添加防腐劑，為保新鮮，請盡快食用完畢。<br>
+				本產品含有麩質穀物（麵粉）、蛋、奶製品。<br>
+			</p>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	<div id="footer">
+        <div class="footline"></div>
+        <div class="container">
+            <div class="footerMenu1">
+            	<li class="footerMenu"><a href="Yone_About.html" title="關於我們">關於我們</a></li>
+            	<li class="footerMenu"><a href="Yone_Map.html" title="外灣地圖">外灣地圖</a></li>
+            </div>
+            <div class="footerMenu2">
+            	<li class="footerMenu"><a href="Yone_News.html" title="最新消息">最新消息</a></li>
+            	<li class="footerMenu"><a href="Yone_Reserve.html" title="保存方式">保存方式</a></li>
+            </div>
+            <div class="Logo"><a href="index.html" title="首頁"><img src="images/002.png" alt="商標"></a></div>
+            <div class="store">
+                <table>
+                    <tr><td>PHONE :</td><td>+886 991 992 993</td></tr>
+                    <tr><td>E-MAIL :</td><td>yone@gmail.com.tw</td></tr>
+                    <tr><td>ADDRESS:</td><td><span style="font-size:14px;">新竹縣橫山鄉新興村1鄰九讚頭48-2號</span></td></tr>
+                    <tr><td>OPENING:</td><td>Friday-Sunday 11:00-21:00</td></tr>
+                 </table>
+            </div>
+
+			<div class="clear"></div>
+            
+            <div class="map">
+                <iframe id="map" src="https://snazzymaps.com/embed/26561" width="100%" height="100%" style="border:none;"></iframe>
+            </div>
+            <div id="clear"></div><!--清除float-->
+            <div class="contact">
+                <form name="contactform" action="#">
+                    <div class="message_text">
+                        <input type="text" name="name" maxlength="20" placeholder="請輸入您的姓名">
+                        <input type="email" name="email" maxlength="30" placeholder="請輸入您的電子郵件">
+                        <input type="tel" name="phone" maxlength="10" placeholder="請輸入您的聯絡電話">
+                    </div>
+                    <div class="message_textarea">
+                        <textarea name="comments" id="comments" maxlength="1000"  placeholder="請輸入您想對我們說的話"></textarea>
+                        <input type="Reset" class="reset" id="checkCode" value="Reset">
+                        <input type="submit"  class="enter" id="Button1" value="Enter">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

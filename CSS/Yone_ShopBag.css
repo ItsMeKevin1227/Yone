@@ -1,0 +1,206 @@
+/* 以下開始首頁大圖 */
+
+.bigimg{
+	background-image: url('../images/shopbag/bg01.jpg');
+}
+
+/* 以下開始導覽列 */
+.fa-shopping-bag{
+	color: #ffb11b;
+}
+/* 以下RWD導覽列 */
+.mobileMenu .navTextTop:nth-child(5) a{
+	transform: translate(2px, 2px);
+	box-shadow: 0px 0px 0px #434343;
+	color: #ffb11b;
+}
+/* 以下是ShopBag */
+
+.shopping{
+	width: 960px;
+	margin: 200px auto 100px auto;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 20px 40px;
+	box-shadow: 1px 1px 1px #999;
+	box-sizing: border-box;
+}
+.shopping h1{
+	font-size: 30px;
+	line-height: 2em;
+}
+.productSmall{
+	width: 20%;
+	float: left;
+	margin: 40px 100px;
+}
+.productSmall img{
+	width: 100%;
+	border-radius: 20px;
+}
+.item{
+	margin: 40px 100px;
+	color: rgba(0, 0, 0, 0.8);
+	position: relative;
+}
+
+.item h2{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 20px;
+	color: rgba(0, 0, 0, 0.8);
+}
+.item table{
+	text-align: center;
+	margin: 40px auto;
+	color: rgba(0, 0, 0, 0.8);
+}
+.item table tr td span{
+  color:black;
+  cursor:pointer;
+}
+.item table tr td a img{
+	box-shadow: 2px 2px 2px #888;
+	transition: .1s;
+}
+.item table tr td a img:hover{
+	transform: translate(-2px, -2px);
+	box-shadow: 4px 4px 2px #888;
+}
+.item table tr td a img:active{
+	transform: translate(2px, 2px);
+	box-shadow: 0 0 0 #fff;
+}
+.check a{
+	position: relative;
+	padding: 16px 80px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background: #FFECB6;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #888;
+	transition: .3s;
+	display: block;
+	color: #6B4a2b;
+}
+.check a:hover{
+	box-shadow: 4px 4px 4px #888;
+	transform: translate(-2px, -2px);
+	color: #ffb11b;
+}
+.check a:active{
+	box-shadow: 0 0 0 #000;
+	transform: translate(2px, 2px);
+}
+@media screen and (max-width: 959px){
+	.shopping{
+		width: 90%;
+		margin: 120px auto;
+	}
+	.item{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.productSmall{
+		width: 90%;
+		float: none;
+		margin: 40px auto;
+	}
+	.productSmall img{
+		width: 100%;
+		border-radius: 20px;
+	}
+}
+/* 以下表單 */
+.body{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.border{
+	width: 50%;
+	min-width: 440px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 1px #999;
+	padding: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding-bottom: 50px;
+}
+.border li{
+	list-style: none;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	width: 96%;
+}
+.border li input{
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background-color: #d0c5b0;
+	color: #556056;
+	font-size: 16px;
+}
+.border .fifty{
+	width: 45%;
+	display: inline-block;
+}
+.border .fiftyright{
+	width: 45%;
+	display: inline-block;
+	margin-left: 20px;
+}
+.border select{
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background-color: #d0c5b0;
+	color: #556056;
+	border-radius: 10px;
+	width: 50%;
+	font-size: 16px;
+	text-align: center;
+	padding-left: 16px;
+	padding-bottom: 4px;
+}
+li input[placeholder]{
+	padding-left: 20px;
+	font-size: 16px;
+	padding-top: 6px;
+	color: #6e552a;
+}
+.border .reset, .border .enter{
+	width: 60px;
+	color: #6e552a;
+	background-color: hsla(45, 91%, 86%, 1.00);
+	margin:0 auto;
+	padding: 0;
+	box-shadow: 1px 1px 1px 1px #333;
+	transition: .1s;
+	border: 1px solid transparent;
+}
+
+.border .enter:hover, .border .reset:hover{
+	color: #ffb11b;
+	transborder: translate(-1px, -1px);
+	cursor: pointer;
+}
+.border .enter:active, .border .reset:active{
+	transform: translate(2px, 2px);
+}
+.border li input:focus, .border li select:focus{
+	color: #ffb11b;
+	background-color: hsla(45, 91%, 86%, 1.00);
+	border: 1px solid #999;
+	box-shadow: 1px 1px 3px #666;
+}
+@media screen and (max-width: 959px){
+	.border{
+		min-width: 0;
+		width: 90%;
+	}
+	.border .fifty, .border .fiftyright{
+		width: 96%;
+		display: block;
+		margin-left: 0;
+	}
+}

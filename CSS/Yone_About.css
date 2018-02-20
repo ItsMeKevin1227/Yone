@@ -1,0 +1,184 @@
+/* 以下開始首頁大圖 */
+.bigimg{
+    background-image: url('../images/about/001.png');
+}
+/* 以下RWD導覽列 */
+.mobileMenu .navTextBottom:nth-child(1) a{
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px #434343;
+    color: #ffb11b;
+}
+/*以下是about*/
+
+.about {
+    color: #000;
+    background-image: url("../images/about/001.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    background-position: 20% 0;
+    margin-bottom: 100px;
+}
+.about .content {
+    position: absolute;
+    top:50px;
+    left:60%;
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+  }
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.about .content .txt {
+    padding: 30px 0px 0px 0px;
+}
+.about .content .txt p{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.about .content .txt p span{
+    font-size: 18px;
+    line-height: 3em;
+    font-style: italic;
+}
+@media screen and (max-width: 959px){
+    .about{
+        background-position: center center;
+        height: 48vh;
+        margin-bottom: 50px;
+    }
+    .about .content .txt p{
+        font-size:14px;
+    }
+    .about .content .txt p span{
+        font-size: 16px;
+        line-height: 1.5em;
+        display: block;
+    }
+    .about .content {
+        position: absolute;
+        width: 88.2%;
+        top: 10px;
+        left: 0;
+        height: 38vh;
+        min-height: 240px;
+        padding: 5%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .3);
+    }
+}
+/* 以下cat */
+.cat {
+    overflow: hidden;
+    position: relative;
+    height: 650px;
+    width: 100%;
+    background-image: url('../images/about/002.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    background-position: 5% center;
+}
+
+.cat .txt {
+    height: 100%;
+    width: 30%;
+    padding: 40px 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, .8);
+}
+.cat .txt p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+.cat .txt p span{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #6B4a2b;
+    font-size: 20px;
+}
+.cat h2{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    text-shadow: none;
+    margin-bottom: 10px;
+}
+.NEWS {
+    text-align: center;
+    background-image: url('../images/about/003.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.NEWS p {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+.NEWS h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 30px;
+}
+
+.NEWS .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+@media screen and (max-width: 959px){
+    .cat{
+        -webkit-background-size: contain;
+        background-size: contain;
+        height: 750px;
+    }
+    .cat .txt{
+        width: 100%;
+        padding: 10px;
+        left: 0;
+        box-sizing: border-box;
+        height:auto;
+    }
+}
+.fbPage{
+    margin-bottom: 50px;
+}
+.fbPageRWD{
+    display: none;
+}
+@media screen and (max-width: 959px){
+    .fbPageRWD{
+        display: block;
+        width: 300px;
+        margin: 0 auto 50px;
+    }
+    .fbPage{
+        display: none;
+    }
+    .NEWS{
+        padding-bottom: 50px;
+    }
+}
+
+/* 以下是footer */
+#footer{
+    margin-top: 0px;
+}
+#footer .footerMenu1 .footerMenu:nth-child(1){
+    transform:rotate(3deg);
+}
+#footer .footerMenu1 .footerMenu:nth-child(1) a{
+    color: #ffb11b;
+}
